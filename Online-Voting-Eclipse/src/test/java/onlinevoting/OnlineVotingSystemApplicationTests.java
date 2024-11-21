@@ -61,11 +61,4 @@ class OnlineVotingSystemApplicationTests {
 		assertNotNull(userService.getUserByUserName(user.getUserName()));
 	}
 	
-	
-
-	
-
-	
-
-
 }

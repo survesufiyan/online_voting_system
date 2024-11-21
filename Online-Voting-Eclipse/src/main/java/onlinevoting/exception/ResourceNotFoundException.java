@@ -40,9 +40,7 @@ import org.springframework.web.bind.annotation.ResponseStatus;
 		public void setFieldValue(Object fieldValue) {
 			this.fieldValue = fieldValue;
 		}
-		
-		
-		
+	
 	}
 
 
