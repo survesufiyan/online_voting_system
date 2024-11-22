@@ -25,7 +25,7 @@ export class ResultComponent {
           this.getWiningPart();
         }
         //using map generate new array-->partyname
-        const nameList = res.map((item: any) => item?.partyName);
+        const nameList = res.map((item: any) => item?.partyLeaderName);
         
         const voteData: any = [];
         res.forEach((item: any) => {
