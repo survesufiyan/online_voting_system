@@ -133,7 +133,17 @@ export class RegisterComponent {
         } else {
           alert('Please add valid information');
         }
-      });
+      },
+      (err:any)=>{
+        //error getting in string json format so we must need to parse JSON
+        console.log("@@@@",JSON.parse(err?.error));
+        const errMsg=JSON.parse(err?.error)?.message;
+        if(errMsg.includes("could not execute statement [Duplicate entry")){
+          // alert('Voter id already in used. Please try with another voter id');
+           this.errorMessage="Voter id already in used. Please try with another voter id";
+        }
+      }
+    );
     }
 
     // routeToLogin(): void {
