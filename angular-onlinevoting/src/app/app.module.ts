@@ -61,8 +61,8 @@ import { BaseChartDirective, provideCharts, withDefaultRegisterables } from 'ng2
   providers: [
     AdminLoginGuardService,
     VoterLoginGuardService,
-    DatePipe,
-    provideCharts(withDefaultRegisterables())
+    DatePipe, //explicity (add extrnally)
+    provideCharts(withDefaultRegisterables()) 
   ],
   bootstrap: [AppComponent]
 })

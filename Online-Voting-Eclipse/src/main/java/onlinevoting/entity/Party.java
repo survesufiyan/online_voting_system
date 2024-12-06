@@ -26,32 +26,14 @@ public class Party {
     private String partyLogo;
     
     private String partyLeaderName;
-    @NotNull(message = "Please Give Constituency")
+    @NotNull(message = "Please Give Constituency Name")
     @Column(name="constituency", length = 30)
     private String constituency;
     
-	public String getConstituency() {
-		return constituency;
-	}
-
-	public void setConstituency(String constituency) {
-		this.constituency = constituency;
-	}
-
-	@NotNull(message = "Please Insert candidate picture")
+    @NotNull(message = "Please Insert candidate picture")
     @Column(name="candidate picture")
     private String canImage;
-    
-    public String getCanImage() {
-		return canImage;
-	}
-
-	public void setCanImage(String canImage) {
-		this.canImage = canImage;
-	}
-
-
-	private int votes;
+    private int votes;
     //hello
 
 	public Long getPartyId() {
@@ -93,6 +75,24 @@ public class Party {
 	public void setVotes(int votes) {
 		this.votes = votes;
 	}
+
+	public String getConstituency() {
+		return constituency;
+	}
+
+	public void setConstituency(String constituency) {
+		this.constituency = constituency;
+	}
+
+	public String getCanImage() {
+		return canImage;
+	}
+
+	public void setCanImage(String canImage) {
+		this.canImage = canImage;
+	}
     
+
+     
 }
 

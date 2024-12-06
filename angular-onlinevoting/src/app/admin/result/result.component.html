@@ -5,8 +5,8 @@
             <tr class="header">
                 <th>Party Logo</th>
                 <th>Party Name</th>
-                <th>Candidate Name</th>
-                <th>Consistency</th>
+                <th>Party Candidate</th>
+                <th>Constituency</th>
                 <th>Vote</th>
             </tr>
             <tr *ngFor="let party of allParty">
@@ -14,7 +14,7 @@
                     <img [src]="party?.partyLogo">
                 </td>
                 <td>
-                     {{party?.partyName}}
+                    {{party?.partyLeaderName}} ({{party?.partyName}})
                 </td>
                 <td>
                     {{party?.partyLeaderName}} 
@@ -26,7 +26,7 @@
             </tr>
         </table>
         <div *ngIf="allParty && allParty.length > 1" class="party-name">
-            Win party:  <span>{{winingParty?.partyLeaderName}}-{{winingParty?.partyName}}</span>
+            Win party: <span>{{winingParty?.partyLeaderName}}-{{winingParty?.partyName}}</span>
         </div>
     </div>
 </div>
