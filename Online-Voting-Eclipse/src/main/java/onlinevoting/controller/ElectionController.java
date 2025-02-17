@@ -20,7 +20,7 @@ public class ElectionController {
     
     @GetMapping("/electionenddate")
     public String getElectionEndDate() {
-        return "Dec 4, 2024";
+        return "Dec 4, 2025";
     }
 
 }
